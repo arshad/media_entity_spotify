@@ -159,6 +159,8 @@ class Spotify extends MediaTypeBase {
           }
 
           return FALSE;
+        case 'type':
+          return preg_match('/^spotify\:(track)/', $this->getField($media, 'uri')) ? 'track' : 'playlist';
       }
     }
 

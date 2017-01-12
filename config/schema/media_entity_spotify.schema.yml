@@ -18,15 +18,35 @@ field.formatter.settings.spotify_embed:
   type: mapping
   label: 'Field display format settings'
   mapping:
-    width:
-      type: string
-      label: 'Width'
-    height:
-      type: string
-      label: 'Height'
-    theme:
-      type: string
-      label: 'Theme'
-    view:
-      type: string
-      label: 'View'
+    playlist:
+      type: mapping
+      label: 'Field settings for playlist/album'
+      mapping:
+        theme:
+          type: string
+          label: 'Theme'
+        view:
+          type: string
+          label: 'View'
+        width:
+          type: string
+          label: 'Width'
+        height:
+          type: string
+          label: 'Height'
+    track:
+      type: mapping
+      label: 'Field settings for track'
+      mapping:
+        theme:
+          type: string
+          label: 'Theme'
+        view:
+          type: string
+          label: 'View'
+        width:
+          type: string
+          label: 'Width'
+        height:
+          type: string
+          label: 'Height'
